@@ -82,11 +82,12 @@ header nav a{
     color:black;
     box-sizing:border-box;
     overflow:hidden;
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 
 header nav a:hover{
     background-color: #C6302A;
+    transform: scale(1.1, 1.1);
 }
 h1{
     font-size:5.2rem;
