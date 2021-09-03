@@ -11,7 +11,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: 0;
+	border: 0px;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -51,6 +51,10 @@ blockquote, q {
     min-width:none;
     font-family: 'ZCOOL KuaiLe', cursive;
 }
+.container{
+    width:800px;
+    margin:auto;
+}
 body { 
     height: 100vh;
     margin: 0; 
@@ -70,7 +74,7 @@ header{
 header nav{
     display:flex;
     justify-content:flex-start;
-    width:100vmax;
+    
     
 }
 header nav a{
@@ -102,15 +106,14 @@ h1{
 }
 .image-container{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items:center;
     padding:3%;
-    width:50vmax;
     object-fit:cover;
 }
 .image-container img{
-    width:90%;
-    height:25rem;
+    width:390px;
+    height:390px;
     border-radius: 10px;
     object-fit:cover;
 }
@@ -118,7 +121,8 @@ h1{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding: 0 3%
+    padding: 0 3%;
+    width:400px;
 }
 
 .about-me-right h2{
@@ -151,17 +155,17 @@ h1{
 .projects{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center;
-    width:100vmax;
+    
 }
 .projects h3{
     align-items:center;
 }
 
 .project-image-containers img{
-    width:15rem;
-    height:15rem;
+    width:175px;
+    height:175px;
     overflow:hidden;
     object-fit:cover;
     border-radius: 10px;
@@ -184,7 +188,7 @@ footer{
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding-bottom:10rem;
+    padding-bottom:40px;
     background-color:#C6302A;
 }
 h4{
