@@ -11,7 +11,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: px solid black;
+	border: 0px solid black;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -133,8 +133,8 @@ p{
 }
 
 .project{
-    width:22%;
-    padding:2rem;
+    width:24%;
+    padding:1rem;
     text-align:center;
 }
 h3{
@@ -161,3 +161,82 @@ footer button{
     color:black;
 }
 
+/* Media queries 800px */
+
+@media(max-width:800px){
+
+    h1{
+        font-size:4rem;
+        padding:1rem;
+
+    header nav{
+        width:25rem;
+    }
+    .about-me{
+        display: flex;
+        flex-direction:column;
+        width:90%;
+        margin:5%
+    }
+
+    .about-me img{
+        width:100%;
+    }
+    .about-me-right{
+        width:100%;
+        display:flex;
+        text-align:center;
+        align-items:center;
+    }
+}
+
+@media(max-width:500px){
+ 
+    h1{
+        font-size:4rem;
+        padding:1rem;
+    }
+    header{
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       text-align:center;
+    }
+    
+    header nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:15rem;
+    }
+    .about-me{
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        margin:0;
+    }
+
+    .about-me img{
+        width:100%;
+    }
+    .about-me-right{
+        width:100%;
+        display:flex;
+        text-align:center;
+        align-items:center;
+    }
+
+    .projects .row-one, .row-two{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        align-items:center;
+    }
+    .project{
+        width:47%;
+        padding:;
+        text-align:center;
+    }
+    
+    
